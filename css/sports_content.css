@@ -1,0 +1,208 @@
+li:nth-child(3) {
+    color:black;
+    text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, auto);
+}
+
+h1 {
+  font-size: 50px;
+  padding-top: 200px;
+  text-align: center;
+  color: white;
+}
+
+#background_pic {
+  grid-column: 1/span 2;
+  grid-row: 1/span 1;  
+  position: relative;
+  background: url("../images/team_back.jpg") black no-repeat; 
+  height: 550px;
+  background-size: cover; 
+}
+
+#start {
+    grid-column: 1/ span 2;
+    grid-row: 2/span 1;
+}
+
+#junior {
+    grid-column: 1/ span 2;
+    grid-row: 3/span 1;
+}
+
+#junior_pics {
+    grid-column: 1/ span 2;
+    grid-row: 4/span 1;
+}
+
+.video {
+    grid-column: 1/ span 2;
+    grid-row: 5/span 1;
+    justify-items: center;
+}
+
+.video {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.video p {
+    text-align: center;
+    font-size: 15px;
+    padding: 50px 30px 20px 30px;
+}
+
+#michigan {
+    grid-column: 1/ span 2;
+    grid-row: 6/span 1;
+}
+
+#michigan_pics {
+    grid-column: 1/ span 2;
+    grid-row: 7/span 1;
+}
+
+.text {
+    padding: 20px 30px 20px 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+#mich {
+    color: black;
+    background-color: white;
+    letter-spacing: .10em;
+    text-shadow: 
+      1px -1px 0 #c1bfbf, 
+      -1px 2px 1px #c6c4c4, 
+      -2px 4px 1px #cbc9c8, 
+      -3px 6px 1px #cfcdcd, 
+      -4px 8px 1px #d4d2d1, 
+      -5px 10px 1px #d8d6d5, 
+      -6px 12px 1px #dbdad9, 
+      -7px 14px 1px #dfdddc, 
+      -8px 16px 1px #e2e0df, 
+      -9px 18px 1px #e4e3e2;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+#kris_mina {
+    height: 311px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#usopen {
+    height: 493px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#australia {
+    height: 493px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#davis {
+    height: 278px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#photoshoot {
+    height: 556px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#funny {
+    height: 364px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#forehand {
+    height: 247px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+#celebration {
+    height: 247px;
+    width: 370px;
+    padding-top: 10px;
+}
+
+
+@media all and (min-width: 750px){
+
+    .text, .video p {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .pictures {
+        align-items: flex-start;
+    }
+
+    .pictures img {
+        padding: 5px;
+    }
+
+    #button {
+    bottom: 20px;
+    right: 20px;
+    }
+}
+
+@media all and (min-width: 1200px){
+
+    main {
+      border: solid 2px   #D3D3D3 ;
+      margin: 10px 70px 10px 70px;
+    }
+
+    #start {
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+        padding-left: 120px;
+        padding-right: 10px;
+    }
+
+    #junior {
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+        padding-right: 120px;
+        padding-left: 10px;
+    }
+
+    #button {
+    bottom: 30px;
+    right: 100px;
+    }
+    
+
+}
+
+
+
+

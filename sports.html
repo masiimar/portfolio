@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset_portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
+    <link rel="stylesheet" type="text/css" href="css/sports_content.css">
+    <link rel="shortcut icon" type="image/png" href="images/ball.png"/>
+    <title>Sports Page</title>
+ </head>
+ <body>
+ 	<header>
+ 		<div class = "my_logo">
+ 			<img src = "images/my_logo.png" alt = "my logo" id = "my_logo"/>
+ 		</div>
+ 		<div class="skip"><a href="#start">Skip to Main Content</a></div>
+ 		<div class = "signature">
+ 			<img src = "images/signature1.png" alt = "signature" id = "signature"/>
+ 		</div>
+ 		<nav>
+ 			<ul class="nav_list">
+ 				<li class="nav_elemnt"><a href = "home.html">Home</a></li>
+ 				<li class="nav_elemnt"><a href = "work.html">Work</a></li>
+ 				<li class="nav_elemnt"><a href = "sports.html">Sports</a></li>
+ 				<li class="nav_elemnt"><a href = "about.html">About</a></li>
+ 			</ul>
+ 		</nav>
+ 	</header>
+  	<main class = "content" id = "#main">
+ 		<div id = "background_pic">
+ 			<h1>Tennis.</h1>
+ 		</div>
+ 		<div class = "text" id = "start">
+ 			<h2>The start.</h2>
+ 			<p>I started playing tennis when I was four years old. My parents introduced me to tennis mostly because my cousin was the Estonian juniors champion at that time. At first, I liked the sport mostly because practices were at noon, which meant that I did not have to go to kindergarten. I also liked the sport from the start because I met so many new people who I am still friends with today. The best memories from my childhood are summer tennis camps.</p>
+ 		</div>
+ 		<div class = "text" id = "junior">
+ 			<h2>Junior tennis.</h2>
+ 			<p>I started practicing seriously when I was 14 because I had some promising results. I started playing international tournaments around Europe at first and then played several in the United States. Between the ages of 14 and 19, I played tournaments in more than 20 countries in Europe, Asia, Africa, America, and Australia. In 2017, I participated in the juniors Australian Open, US Open, French Open, and Wimbledon, and my best juniors ranking was 41.</p>
+ 		</div>
+ 		<div class = "pictures" id = "junior_pics">
+ 			<img src = "images/kris_mina.jpg" alt = "kris and i" id = "kris_mina"/>
+ 			<img src = "images/davis.jpg" alt = "davis cup" id = "davis"/>
+ 			<img src = "images/usopen.jpg" alt = "usopen" id = "usopen"/>
+ 			<img src = "images/australia.jpg" alt = "aus open" id = "australia"/> 
+ 		</div>
+ 		<div class = "video">
+ 			<p>Vladimir Ivanov and I playing against Georgian Davis Cup team while representing Estonia.</p>
+ 			<video width="370" controls>
+  			<source src="daviscup.mp4" type="video/mp4">
+  			Your browser does not support HTML5 video.
+			</video>
+		</div>
+ 		<div class = "text" id = "michigan">
+ 			<h2 id = "mich">Michigan.</h2>
+ 			<p>Tennis was also one of the biggest reasons I came to the University of Michigan. Michigan has historically had a strong tennis program. We have won the BIG 10 conference more than 30 times and one NCAA championship in 1957. During the past two and a half years I have been at Michigan, the team has done great. In 2018, we made the sweet 16 in the NCAA tournament for the first time in 15 years. In February of 2020, our team was ranked 4th, which is the best ranking the team has had in 20 years. I have been ranked as high as 21 in singles and two in doubles in college tennis rankings.</p>
+ 		</div>
+ 		<div class = "pictures" id = "michigan_pics"> 
+ 			<img src = "images/mich_celeb.jpg" alt = "celebration" id = "celebration"/> 
+ 			<img src = "images/eeskasi.JPG" alt = "forehand" id = "forehand"/> 
+ 			<img src = "images/funny.jpg" alt = "playing tennis" id = "funny"/>
+ 			<img src = "images/photoshoot.jpg" alt = "photoshoot" id = "photoshoot"/>
+ 		</div>
+ 		<button onclick="upFunction()" id="button" title="Go up"><img src = "images/arrow.png" alt = "up_icon"></button>
+ 		
+ 		<script> 
+		var up_button = document.getElementById("button");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+  			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    			up_button.style.display = "block";
+  			} else {
+   				up_button.style.display = "none";
+  			}
+		}
+
+		function upFunction() {
+  			document.body.scrollTop = 0;
+  			document.documentElement.scrollTop = 0;
+		}
+		</script>
+ 	</main>
+ 	<footer>
+ 		<div class = "sm">
+ 			<p>Follow me!</p>
+ 			<a href = "https://github.com/masiimar"><img src = "images/github_icon.png" alt = "github_icon"></a>
+ 			<a href = "https://www.facebook.com/mattias.siimar"><img src = "images/fb_icon.png" alt = "fb_icon" ></a>
+ 			<a href = "https://www.linkedin.com/in/mattias-siimar-18243a188/"><img src = "images/linkedin_icon.png" alt = "linked_in" ></a>
+ 			<a href = "https://www.instagram.com/mattiassiimar/"><img src = "images/insta_icon.png" alt = "insta_icon" class = "sm_icon"></a>
+ 		</div>
+ 	</footer>	
+ </body>
+</html>

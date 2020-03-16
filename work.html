@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset_portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
+    <link rel="stylesheet" type="text/css" href="css/work_content.css">
+    <link rel="shortcut icon" type="image/png" href="images/ball.png"/>
+    <title>Work Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+ </head>
+ <body>
+ 	<header>
+ 		<div class = "my_logo">
+ 			<img src = "images/my_logo.png" alt = "my logo" id = "my_logo"/>
+ 		</div>
+ 		<div class="skip"><a href="#about_section">Skip to Main Content</a></div>
+ 		<div class = "signature">
+ 			<img src = "images/signature1.png" alt = "signature" id = "signature"/>
+ 		</div>
+ 		<nav>
+ 			<ul class="nav_list">
+ 				<li class="nav_elemnt"><a href = "home.html">Home</a></li>
+ 				<li class="nav_elemnt"><a href = "work.html">Work</a></li>
+ 				<li class="nav_elemnt"><a href = "sports.html">Sports</a></li>
+ 				<li class="nav_elemnt"><a href = "about.html">About</a></li>
+ 			</ul>
+ 		</nav>
+ 	</header>
+ 	<main>
+ 		<div id = "background_pic">
+ 			<h1 id = "work">Work.</h1>
+ 		</div>
+ 		<div id = "about_section">
+ 			<h2>About me.</h2><br>
+ 			<p>I am Mattias Siimar and I am a student-athlete at the University of Michigan. I am a junior in the School of Information and pursue information analysis path. In BSI, people focus on exploring and solving challenging problems at the intersection of people, information and technology. Apart from information, I am minoring in Business Administration. I am currently looking for opportunities in business intelligence and financial tech fields.</p><br>
+ 			<p>During my time here at Michigan, I have taken several math, statistics, and data-oriented programming courses. This year, I am taking a data manipulation class along with finance and marketing courses at the Ross School of business.</p><br>
+ 		</div>
+ 		<div id = "professional_pic">
+ 		</div>
+ 		<div id = "excites">
+ 			<h2>What excites me?</h2><br>
+ 			<p>I aspire to meet a standard of excellence, which is why I am interested in creating products and processes that make people’s lives more efficient. Last summer I interned in a private equity company BaltCap where my team and I were doing market research about Baltic’s RPA market in order to find out how RPA solutions could be incorporated into the company's systems.</p><br>
+ 			<p>I believe I significantly improved my critical thinking and problem-solving skills since BaltCap had not used these solutions before. I learned to deal with uncertainty because the field was new for the firm and we did not know what to expect at first. The experience helped me to embrace a team environment that brings out the best in people and accelerates processes.</p>
+ 		</div>
+ 		<div id = "resume">
+ 			<div id = "initial">Resume/Transcript</div>
+ 			<div id = scroll_down>
+ 				<a href = "Resume.pdf"><img src = "images/cv_pic.png" alt = "resume_icon"/></a>
+ 				<a href = "Transcript.pdf"><img src = "images/transc_icon.png" alt = "transcript_icon"/></a>
+ 			</div>
+ 		</div>	
+ 		<div id = "form_elements">
+ 		<h2 id = "contact_me">Want to contact me?</h2>
+ 		<div class = "form">
+ 			<form action="https://formspree.io/mjvroldp" method="POST">
+ 				<fieldset>
+ 					<div>
+ 						<label for = "name">Name:</label><input type = "text" id = "name" name = "name"/><br>
+ 						<label for = "email">Email:</label><input type = "text" id = "email" name = "_replyto"/><br>
+ 						<label for = "message">Message:</label><textarea id = "message"></textarea><br>
+ 					</div>
+ 					<div>
+ 						<input type="submit" value="Submit"/>
+ 					</div>
+ 				</fieldset> 				
+ 			</form>
+ 		</div>
+ 		</div>
+ 		<button onclick="upFunction()" id="button" title="Go up"><img src = "images/arrow.png" alt = "up_icon"></button>
+ 		
+ 		<script> 
+		$(document).ready(function(){
+  			$("#initial").click(function(){
+    			$("#scroll_down").slideToggle("slow");
+    		});
+  		});
+
+		var up_button = document.getElementById("button");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+  			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    			up_button.style.display = "block";
+  			} else {
+   				up_button.style.display = "none";
+  			}
+		}
+
+		function upFunction() {
+  			document.body.scrollTop = 0;
+  			document.documentElement.scrollTop = 0;
+		}
+		</script>
+ 	</main>
+ 	<footer>
+ 		<div class = "sm">
+ 			<p>Follow me!</p>
+ 			<a href = "https://github.com/masiimar"><img src = "images/github_icon.png" alt = "github_icon"></a>
+ 			<a href = "https://www.facebook.com/mattias.siimar"><img src = "images/fb_icon.png" alt = "fb_icon" ></a>
+ 			<a href = "https://www.linkedin.com/in/mattias-siimar-18243a188/"><img src = "images/linkedin_icon.png" alt = "linked_in" ></a>
+ 			<a href = "https://www.instagram.com/mattiassiimar/"><img src = "images/insta_icon.png" alt = "insta_icon" class = "sm_icon"></a>
+ 		</div>
+ 	</footer>	
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

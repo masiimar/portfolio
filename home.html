@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset_portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
+    <link rel="stylesheet" type="text/css" href="css/home_content.css">
+    <link rel="shortcut icon" type="image/png" href="images/ball.png"/>
+    <title>Home Page</title>
+ </head>
+ <body>
+ 	<header>
+ 		<div class = "my_logo">
+ 			<img src = "images/my_logo.png" alt = "my logo" id = "my_logo"/>
+ 		</div>
+ 		<div class="skip"><a href="#portrait">Skip to Main Content</a></div>
+ 		<div class = "signature">
+ 			<img src = "images/signature1.png" alt = "signature" id = "signature"/>
+ 		</div>
+ 		<nav>
+ 			<ul class="nav_list">
+ 				<li class="nav_elemnt"><a href = "home.html">Home</a></li>
+ 				<li class="nav_elemnt"><a href = "work.html">Work</a></li>
+ 				<li class="nav_elemnt"><a href = "sports.html">Sports</a></li>
+ 				<li class="nav_elemnt"><a href = "about.html">About</a></li>
+ 			</ul>
+ 		</nav>
+ 	</header>
+ 	<main class = "content" id = "#main_home">
+ 		<div id = "background_pic_home">
+ 			<h1 id = "me">I'm Mattias.</h1>
+ 		</div>
+ 		<img src = "images/portrait.png" alt = "portriat" id = "portrait"/>
+ 		<div class = "description_part">
+ 			<h2 id = "hi_eveyone">Hi everyone!</h2><br>
+ 			<p id = "description">I am 22 years old, and I am from <a href = "https://en.wikipedia.org/wiki/Estonia">Estonia</a>. It is an European country that lies just by Sweden and has a population of only 1.4 million. Currently, I am studying at the University of Michigan, and I am majoring in Information Analysis. I have been playing tennis for 19 years, and I am a part of the University of Michigan Varsity Men's Tennis Team. I am an energetic guy who loves to have fun and wonder in nature.</p><br><br>
+ 		</div>
+ 		<button onclick="upFunction()" id="button" title="Go up"><img src = "images/arrow.png" alt = "up_icon"></button>
+
+ 		<script> 
+		var up_button = document.getElementById("button");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+  			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    			up_button.style.display = "block";
+  			} else {
+   				up_button.style.display = "none";
+  			}
+		}
+
+		function upFunction() {
+  			document.body.scrollTop = 0;
+  			document.documentElement.scrollTop = 0;
+		}
+		</script>
+ 	</main>
+ 	<footer>
+ 		<div class = "sm">
+ 			<p>Follow me!</p>
+ 			<a href = "https://github.com/masiimar"><img src = "images/github_icon.png" alt = "github_icon"></a>
+ 			<a href = "https://www.facebook.com/mattias.siimar"><img src = "images/fb_icon.png" alt = "fb_icon" ></a>
+ 			<a href = "https://www.linkedin.com/in/mattias-siimar-18243a188/"><img src = "images/linkedin_icon.png" alt = "linked_in" ></a>
+ 			<a href = "https://www.instagram.com/mattiassiimar/"><img src = "images/insta_icon.png" alt = "insta_icon" class = "sm_icon"></a>
+ 		</div>
+ 	</footer>
+ </body>
+</html>
+
+ 				
+ 				
+ 				
